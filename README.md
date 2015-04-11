@@ -1,5 +1,6 @@
-# mariadb-docker
+# calibre-docker
 **What is Calibre?**
+
 **calibre** is a free and open source e-book library management application developed by users of e-books for users of e-books. It has a cornucopia of features divided into the following main categories:
 
  *  Library Management
