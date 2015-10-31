@@ -6,7 +6,6 @@ RUN mkdir -p /opt/Library
 RUN wget -nv -O/tmp/linux-installer.py --no-check-certificate https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py
 RUN python -c "import sys; main=lambda x,y:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main('/opt', True)" < /tmp/linux-installer.py
 
-VOLUME ["/opt/Library" ]
 EXPOSE 8080
 # ENTRYPOINT ["/etc/rc.d/rc.mysqld", "start"]
 ENTRYPOINT ["/opt/calibre/calibre-server"]
